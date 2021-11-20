@@ -1,0 +1,118 @@
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 0, 0, 0.035) !important;
+  color: rgb(0, 0, 0);
+}
+.color-blue{
+  background-color: rgba(0, 0, 0, 0.056);
+}
+.color-yellow{
+  background-color: rgb(164, 253, 61);
+  
+  margin-right: 5px;
+}
+.color-yellow:hover{
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.439);
+}
+.color-red{
+  background-color: rgb(245, 115, 115);
+  
+}
+.color-red:hover{
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.439);
+}
+.product:hover{
+  box-shadow:10px 10px 10px rgba(0, 0, 0, 0.624)
+}
+#head-name{
+  color: rgb(245, 164, 41);
+}
+.search-field {
+  border: none;
+  border-radius: 50px;
+  padding: 5px;
+  outline: none;
+}
+.search-field:hover {
+  outline: none;
+  border: none;
+}
+.search-box {
+  border: 1px solid rgb(3, 118, 211);
+  width: 281px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 50px;
+  border-right: none;
+}
+.search-button {
+  padding: 10px 50px;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+#all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.single-product {
+  padding: 10px;
+  transition: 0.6s;
+}
+.single-product:hover {
+  box-shadow: 4px 4px 7px gray;
+  border-radius: 10px;
+  border: 1px solid cyan;
+}
+.product-image {
+  width: 150px;
+  height: 150px;
+}
+.cart {
+  width: 350px;
+  /* border: 1px solid green; */
+  padding: 10px;
+  box-shadow: 10px 10px 20px gray;
+  border-radius: 5px;
+  margin-right: 30px;
+  position: fixed;
+}
+#my-cart{
+  right: 1%;
+  width: auto;
+  margin-top: 12%;
+  margin-right: 5%;
+}
+.cart-main {
+  padding-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cart {
+    width: 300px;
+    /* border: 1px solid green; */
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+  }
+  .cart-main {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
